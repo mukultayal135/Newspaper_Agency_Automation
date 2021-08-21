@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MasterPaper.MasterPaperController">
+   <children>
+      <Label layoutX="219.0" layoutY="55.0" prefHeight="28.0" prefWidth="138.0" text="New Paper Master">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="130.0" prefHeight="20.0" prefWidth="87.0" text="Newspaper">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="5.0" layoutY="5.0" minHeight="600.0" minWidth="600.0">
+         <children>
+            <Label layoutX="70.0" layoutY="180.0" prefHeight="20.0" prefWidth="87.0" text="Cost">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtcost" layoutX="254.0" layoutY="177.0" promptText="Cost" />
+            <ComboBox fx:id="combonews" editable="true" layoutX="253.0" layoutY="124.0" prefWidth="150.0" promptText="Newspaper" />
+            <Button layoutX="452.0" layoutY="124.0" mnemonicParsing="false" onAction="#dofetch" text="Fetch" />
+            <Button layoutX="70.0" layoutY="288.0" mnemonicParsing="false" onAction="#donew" text="New" />
+            <Button layoutX="157.0" layoutY="287.0" mnemonicParsing="false" onAction="#dosave" text="Save" />
+            <Button layoutX="253.0" layoutY="287.0" mnemonicParsing="false" onAction="#doupdate" text="Update" />
+            <Button layoutX="345.0" layoutY="287.0" mnemonicParsing="false" onAction="#doremove" text="Remove" />
+            <Button layoutX="463.0" layoutY="287.0" mnemonicParsing="false" onAction="#showall" text="Show All" />
+            <TableView fx:id="tbl1" layoutX="41.0" layoutY="358.0" prefHeight="200.0" prefWidth="527.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

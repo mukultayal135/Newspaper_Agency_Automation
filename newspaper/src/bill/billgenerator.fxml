@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bill.billgeneratorController">
+   <children>
+      <ComboBox fx:id="combomobile" layoutX="37.0" layoutY="68.0" prefWidth="150.0" />
+      <TextField fx:id="totaldays" layoutX="404.0" layoutY="230.0" />
+      <DatePicker fx:id="startdate" layoutX="258.0" layoutY="150.0" />
+      <DatePicker fx:id="enddate" layoutX="39.0" layoutY="230.0" />
+      <TextField fx:id="skip" layoutX="225.0" layoutY="230.0" />
+      <Button layoutX="407.0" layoutY="268.0" mnemonicParsing="false" onAction="#getdays" text="Get Days" />
+      <Button layoutX="199.0" layoutY="315.0" mnemonicParsing="false" onAction="#bill" text="Generate Bill" />
+      <Button layoutX="239.0" layoutY="412.0" mnemonicParsing="false" onAction="#save" text="Save" />
+      <Label layoutX="37.0" layoutY="41.0" text="Mobile">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="258.0" layoutY="68.0" mnemonicParsing="false" onAction="#fetch" text="Fetch">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="total" layoutX="38.0" layoutY="150.0" />
+      <Label layoutX="39.0" layoutY="123.0" text="Total Price">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="210.0" text="Bill Upto">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="225.0" layoutY="210.0" text="Days Skiped">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="398.0" layoutY="200.0" text="Total Days">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="255.0" layoutY="123.0" text="Start Date">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtbill" layoutX="37.0" layoutY="315.0" />
+      <Label layoutX="24.0" layoutY="290.0" text="Bill">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
